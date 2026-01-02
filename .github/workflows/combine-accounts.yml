@@ -61,7 +61,7 @@ jobs:
 
           # Build combined.json
           echo '{' > accounts/combined.json
-          echo '  "last_updated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",' >> accounts/combined.json
+          echo '  "last_updated": "'$(TZ=UTC date +"%Y-%m-%dT%H:%M:%SZ")'",' >> accounts/combined.json
           echo '  "accounts": [' >> accounts/combined.json
 
           # Process each account file
