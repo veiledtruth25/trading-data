@@ -1,18 +1,19 @@
 {
-  "last_updated": "2026-01-02T09:24:17Z",
+  "last_updated": "2026-01-02T09:58:23Z",
   "accounts": [
     {
       "id": "103183855",
       "login": 103183855,
+      "name": "Abi Manyu",
       "server": "FBS-Demo",
       "currency": "USD",
       "balance": 9989.7,
-      "equity": 9986.47,
+      "equity": 9986.42,
       "margin": 29.38,
-      "free_margin": 9957.09,
-      "margin_level": 33990.71,
-      "profit": -3.23,
-      "last_updated": "2026-01-02T09:24:17Z",
+      "free_margin": 9957.04,
+      "margin_level": 33990.54,
+      "profit": -3.28,
+      "last_updated": "2026-01-02T09:58:23Z",
       "active_eas": [
         "EA Trade Helper",
         "GoldenTrade"
