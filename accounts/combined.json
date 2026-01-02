@@ -1,6 +1,23 @@
 {
-  "last_updated": "2026-01-02T10:09:00Z",
+  "last_updated": "2026-01-02T17:11:40Z",
   "accounts": [
+    {
+      "id": "80076323",
+      "login": 80076323,
+      "name": "Windsor cent 3",
+      "server": "WITITSolutionsLtd-Real1",
+      "currency": "USC",
+      "balance": 10275.46,
+      "equity": 10275.46,
+      "margin": 0,
+      "free_margin": 10275.46,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-02T17:11:40Z",
+      "active_eas": [
+        "EA Trade Helper"
+      ]
+    },
     {
       "id": "103183855",
       "login": 103183855,
