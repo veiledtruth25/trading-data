@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-01-02T15:12:37Z",
+  "last_updated": "2026-01-02T15:13:46Z",
   "accounts": [
     {
-      "last_updated": "2026-01-02T08:12:29Z",
+      "last_updated": "2026-01-02T08:13:38Z",
       "id": "103183855",
       "name": "GoldenTrade",
       "login": 103183855,
       "server": "FBS-Demo",
       "currency": "USD",
       "balance": 9990.30,
-      "equity": 9987.02,
-      "margin": 29.38,
-      "free_margin": 9957.64,
-      "margin_level": 33992.58,
-      "profit": -3.28
+      "equity": 9986.69,
+      "margin": 38.05,
+      "free_margin": 9948.64,
+      "margin_level": 26246.23,
+      "profit": -3.61
     }
   ]
 }
