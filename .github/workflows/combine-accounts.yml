@@ -5,6 +5,7 @@ on:
     paths:
       - 'accounts/*.json'
       - '!accounts/combined.json'
+      - '!accounts/index.json'
   workflow_dispatch:  # Manual trigger
 
 permissions:
@@ -20,20 +21,52 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Combine account files
+      - name: Auto-generate index.json and combine accounts
         run: |
-          # Read index.json to get account list
-          ACCOUNTS=$(cat accounts/index.json | jq -r '.accounts[]')
+          # Auto-detect all account files (exclude combined.json and index.json)
+          ACCOUNT_FILES=$(ls accounts/*.json 2>/dev/null | grep -v 'combined.json' | grep -v 'index.json' || true)
 
-          # Start building combined JSON
+          # Extract account IDs from filenames
+          ACCOUNT_IDS=""
+          for FILE in $ACCOUNT_FILES; do
+            BASENAME=$(basename "$FILE" .json)
+            if [ -n "$ACCOUNT_IDS" ]; then
+              ACCOUNT_IDS="$ACCOUNT_IDS,$BASENAME"
+            else
+              ACCOUNT_IDS="$BASENAME"
+            fi
+          done
+
+          # Generate index.json
+          echo '{' > accounts/index.json
+          echo '  "accounts": [' >> accounts/index.json
+          FIRST=true
+          for FILE in $ACCOUNT_FILES; do
+            BASENAME=$(basename "$FILE" .json)
+            if [ "$FIRST" = true ]; then
+              FIRST=false
+              echo "    \"$BASENAME\"" >> accounts/index.json
+            else
+              echo "    ,\"$BASENAME\"" >> accounts/index.json
+            fi
+          done
+          echo '  ]' >> accounts/index.json
+          echo '}' >> accounts/index.json
+
+          # Pretty print index.json
+          cat accounts/index.json | jq '.' > accounts/index_temp.json
+          mv accounts/index_temp.json accounts/index.json
+
+          echo "Generated index.json with accounts: $ACCOUNT_IDS"
+
+          # Build combined.json
           echo '{' > accounts/combined.json
           echo '  "last_updated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",' >> accounts/combined.json
           echo '  "accounts": [' >> accounts/combined.json
 
-          # Process each account
+          # Process each account file
           FIRST=true
-          for ACCOUNT_ID in $ACCOUNTS; do
-            FILE="accounts/${ACCOUNT_ID}.json"
+          for FILE in $ACCOUNT_FILES; do
             if [ -f "$FILE" ]; then
               if [ "$FIRST" = true ]; then
                 FIRST=false
@@ -49,20 +82,20 @@ jobs:
           echo '  ]' >> accounts/combined.json
           echo '}' >> accounts/combined.json
 
-          # Pretty print the final file
+          # Pretty print combined.json
           cat accounts/combined.json | jq '.' > accounts/combined_temp.json
           mv accounts/combined_temp.json accounts/combined.json
 
-      - name: Commit combined file
+      - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add accounts/combined.json
+          git add accounts/index.json accounts/combined.json
 
           # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-combine account data"
+            git commit -m "chore: auto-update index and combine account data"
             git push
           fi
