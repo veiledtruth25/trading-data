@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-02T17:18:50Z",
+  "last_updated": "2026-01-02T17:24:51Z",
   "accounts": [
     {
       "id": "20158621",
@@ -25,12 +25,12 @@
       "server": "WITITSolutionsLtd-Real1",
       "currency": "USC",
       "balance": 10275.46,
-      "equity": 10273.64,
-      "margin": 0,
-      "free_margin": 10273.64,
-      "margin_level": 0,
-      "profit": -1.82,
-      "last_updated": "2026-01-02T17:18:50Z",
+      "equity": 10273.53,
+      "margin": 8.66,
+      "free_margin": 10264.87,
+      "margin_level": 118631.99,
+      "profit": -1.93,
+      "last_updated": "2026-01-02T17:24:51Z",
       "active_eas": [
         "EA Trade Helper"
       ]
