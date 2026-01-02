@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-01-02T09:22:40Z",
+  "last_updated": "2026-01-02T09:24:17Z",
   "accounts": [
     {
       "id": "103183855",
       "login": 103183855,
       "server": "FBS-Demo",
       "currency": "USD",
-      "balance": 9990.02,
-      "equity": 9986.79,
+      "balance": 9989.7,
+      "equity": 9986.47,
       "margin": 29.38,
-      "free_margin": 9957.41,
-      "margin_level": 33991.8,
+      "free_margin": 9957.09,
+      "margin_level": 33990.71,
       "profit": -3.23,
-      "last_updated": "2026-01-02T09:22:40Z",
+      "last_updated": "2026-01-02T09:24:17Z",
       "active_eas": [
         "EA Trade Helper",
         "GoldenTrade"
