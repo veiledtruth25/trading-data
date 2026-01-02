@@ -59,9 +59,28 @@ jobs:
 
           echo "Generated index.json with accounts: $ACCOUNT_IDS"
 
+          # Get the latest account's last_updated timestamp for combined.json
+          # This ensures combined.json reflects when data was actually updated
+          LATEST_TIMESTAMP=""
+          for FILE in $ACCOUNT_FILES; do
+            if [ -f "$FILE" ]; then
+              FILE_TIMESTAMP=$(jq -r '.last_updated' "$FILE" 2>/dev/null || echo "")
+              if [ -n "$FILE_TIMESTAMP" ] && [ "$FILE_TIMESTAMP" != "null" ]; then
+                if [ -z "$LATEST_TIMESTAMP" ] || [[ "$FILE_TIMESTAMP" > "$LATEST_TIMESTAMP" ]]; then
+                  LATEST_TIMESTAMP="$FILE_TIMESTAMP"
+                fi
+              fi
+            fi
+          done
+
+          # Fallback to current UTC time if no timestamp found
+          if [ -z "$LATEST_TIMESTAMP" ]; then
+            LATEST_TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          fi
+
           # Build combined.json
           echo '{' > accounts/combined.json
-          echo '  "last_updated": "'$(TZ=UTC date +"%Y-%m-%dT%H:%M:%SZ")'",' >> accounts/combined.json
+          echo '  "last_updated": "'"$LATEST_TIMESTAMP"'",' >> accounts/combined.json
           echo '  "accounts": [' >> accounts/combined.json
 
           # Process each account file
