@@ -1,11 +1,8 @@
 name: Combine Account Data
 
 on:
-  push:
-    paths:
-      - 'accounts/*.json'
-      - '!accounts/combined.json'
-      - '!accounts/index.json'
+  schedule:
+    - cron: '*/5 * * * *'  # Run every 5 minutes
   workflow_dispatch:  # Manual trigger
 
 permissions:
@@ -21,8 +18,64 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Auto-generate index.json and combine accounts
+      - name: Fetch and combine data from all trading-data repos
+        env:
+          GH_TOKEN: ${{ secrets.REPO_PAT }}
+          GITHUB_OWNER: veiledtruth25
         run: |
+          mkdir -p accounts
+
+          # List all trading-data-* repos owned by user
+          echo "Fetching list of trading-data repos..."
+          REPOS=$(gh api user/repos --paginate -q '.[] | select(.name | startswith("trading-data-")) | .name' 2>/dev/null || echo "")
+
+          if [ -z "$REPOS" ]; then
+            echo "No trading-data-* repos found"
+            exit 0
+          fi
+
+          echo "Found repos:"
+          echo "$REPOS"
+
+          # Fetch JSON files from each repo
+          for REPO in $REPOS; do
+            echo ""
+            echo "Processing $REPO..."
+
+            # Get list of JSON files in repo root
+            FILES=$(gh api "repos/$GITHUB_OWNER/$REPO/contents" -q '.[] | select(.name | endswith(".json")) | .name' 2>/dev/null || echo "")
+
+            if [ -z "$FILES" ]; then
+              echo "  No JSON files found in $REPO"
+              continue
+            fi
+
+            for FILE in $FILES; do
+              echo "  Fetching $FILE..."
+              # Download raw content
+              gh api "repos/$GITHUB_OWNER/$REPO/contents/$FILE" -q '.content' 2>/dev/null | base64 -d > "accounts/${FILE}" 2>/dev/null || true
+
+              if [ -s "accounts/${FILE}" ]; then
+                echo "  Saved to accounts/${FILE}"
+              else
+                rm -f "accounts/${FILE}"
+                echo "  Failed to fetch $FILE"
+              fi
+            done
+          done
+
+          echo ""
+          echo "Files in accounts/:"
+          ls -la accounts/ || echo "No files"
+
+      - name: Generate index.json and combine accounts
+        run: |
+          # Check if any JSON files exist
+          if [ ! -d accounts ] || [ -z "$(ls accounts/*.json 2>/dev/null | grep -v 'combined.json' | grep -v 'index.json' || true)" ]; then
+            echo "No account files to process"
+            exit 0
+          fi
+
           # Auto-detect all account files (exclude combined.json and index.json)
           ACCOUNT_FILES=$(ls accounts/*.json 2>/dev/null | grep -v 'combined.json' | grep -v 'index.json' || true)
 
@@ -57,7 +110,6 @@ jobs:
           echo "Generated index.json with accounts: ${!LOGINS[@]}"
 
           # Build combined.json - group by login ID
-          # Use node.js for complex JSON manipulation
           node << 'NODEJS'
           const fs = require('fs');
           const path = require('path');
@@ -65,6 +117,11 @@ jobs:
           const accountsDir = 'accounts';
           const files = fs.readdirSync(accountsDir)
             .filter(f => f.endsWith('.json') && f !== 'combined.json' && f !== 'index.json');
+
+          if (files.length === 0) {
+            console.log('No account files to combine');
+            process.exit(0);
+          }
 
           // Group files by login ID
           const accountsMap = {};
@@ -161,12 +218,12 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add accounts/index.json accounts/combined.json
+          git add accounts/
 
           # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-update index and combine account data"
+            git commit -m "chore: auto-update account data from private repos"
             git push
           fi
