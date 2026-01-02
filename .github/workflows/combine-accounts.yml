@@ -71,7 +71,17 @@ jobs:
 
           for (const file of files) {
             const filePath = path.join(accountsDir, file);
-            const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            // Read file and remove any null bytes or trailing whitespace
+            let rawContent = fs.readFileSync(filePath, 'utf8');
+            rawContent = rawContent.replace(/\0/g, '').trim();
+
+            let content;
+            try {
+              content = JSON.parse(rawContent);
+            } catch (e) {
+              console.error('Error parsing', file, ':', e.message);
+              continue;
+            }
 
             // Extract login ID from filename or content
             const loginId = content.login ? String(content.login) : file.split('_')[0].replace('.json', '');
