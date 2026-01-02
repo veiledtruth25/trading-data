@@ -33,7 +33,5 @@ trading-data/
 
 Untuk mengakses data dari web:
 ```
-https://raw.githubusercontent.com/USERNAME/trading-data/main/accounts/account.json
+https://raw.githubusercontent.com/veiledtruth25/trading-data/main/accounts/combined.json
 ```
-
-Ganti `USERNAME` dengan username GitHub kamu.
