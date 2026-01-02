@@ -1,0 +1,65 @@
+name: Combine Account Data
+
+on:
+  push:
+    paths:
+      - 'accounts/*.json'
+      - '!accounts/combined.json'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Combine account files
+        run: |
+          # Read index.json to get account list
+          ACCOUNTS=$(cat accounts/index.json | jq -r '.accounts[]')
+
+          # Start building combined JSON
+          echo '{' > accounts/combined.json
+          echo '  "last_updated": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'",' >> accounts/combined.json
+          echo '  "accounts": [' >> accounts/combined.json
+
+          # Process each account
+          FIRST=true
+          for ACCOUNT_ID in $ACCOUNTS; do
+            FILE="accounts/${ACCOUNT_ID}.json"
+            if [ -f "$FILE" ]; then
+              if [ "$FIRST" = true ]; then
+                FIRST=false
+              else
+                echo ',' >> accounts/combined.json
+              fi
+              # Add account data (indented)
+              cat "$FILE" | jq '.' | sed 's/^/    /' >> accounts/combined.json
+            fi
+          done
+
+          echo '' >> accounts/combined.json
+          echo '  ]' >> accounts/combined.json
+          echo '}' >> accounts/combined.json
+
+          # Pretty print the final file
+          cat accounts/combined.json | jq '.' > accounts/combined_temp.json
+          mv accounts/combined_temp.json accounts/combined.json
+
+      - name: Commit combined file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add accounts/combined.json
+
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-combine account data"
+            git push
+          fi
