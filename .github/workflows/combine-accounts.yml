@@ -26,84 +26,123 @@ jobs:
           # Auto-detect all account files (exclude combined.json and index.json)
           ACCOUNT_FILES=$(ls accounts/*.json 2>/dev/null | grep -v 'combined.json' | grep -v 'index.json' || true)
 
-          # Extract account IDs from filenames
-          ACCOUNT_IDS=""
+          # Extract unique login IDs from filenames (format: {login}_{eaName}.json or {login}.json)
+          declare -A LOGINS
           for FILE in $ACCOUNT_FILES; do
             BASENAME=$(basename "$FILE" .json)
-            if [ -n "$ACCOUNT_IDS" ]; then
-              ACCOUNT_IDS="$ACCOUNT_IDS,$BASENAME"
-            else
-              ACCOUNT_IDS="$BASENAME"
-            fi
+            # Extract login ID (everything before first underscore, or whole name if no underscore)
+            LOGIN_ID=$(echo "$BASENAME" | cut -d'_' -f1)
+            LOGINS[$LOGIN_ID]=1
           done
 
-          # Generate index.json
+          # Generate index.json with unique login IDs
           echo '{' > accounts/index.json
           echo '  "accounts": [' >> accounts/index.json
           FIRST=true
-          for FILE in $ACCOUNT_FILES; do
-            BASENAME=$(basename "$FILE" .json)
+          for LOGIN_ID in "${!LOGINS[@]}"; do
             if [ "$FIRST" = true ]; then
               FIRST=false
-              echo "    \"$BASENAME\"" >> accounts/index.json
+              echo "    \"$LOGIN_ID\"" >> accounts/index.json
             else
-              echo "    ,\"$BASENAME\"" >> accounts/index.json
+              echo "    ,\"$LOGIN_ID\"" >> accounts/index.json
             fi
           done
           echo '  ]' >> accounts/index.json
           echo '}' >> accounts/index.json
 
-          # Pretty print index.json
-          cat accounts/index.json | jq '.' > accounts/index_temp.json
+          # Pretty print and sort index.json
+          cat accounts/index.json | jq '.accounts |= sort' > accounts/index_temp.json
           mv accounts/index_temp.json accounts/index.json
 
-          echo "Generated index.json with accounts: $ACCOUNT_IDS"
+          echo "Generated index.json with accounts: ${!LOGINS[@]}"
 
-          # Get the latest account's last_updated timestamp for combined.json
-          # This ensures combined.json reflects when data was actually updated
-          LATEST_TIMESTAMP=""
-          for FILE in $ACCOUNT_FILES; do
-            if [ -f "$FILE" ]; then
-              FILE_TIMESTAMP=$(jq -r '.last_updated' "$FILE" 2>/dev/null || echo "")
-              if [ -n "$FILE_TIMESTAMP" ] && [ "$FILE_TIMESTAMP" != "null" ]; then
-                if [ -z "$LATEST_TIMESTAMP" ] || [[ "$FILE_TIMESTAMP" > "$LATEST_TIMESTAMP" ]]; then
-                  LATEST_TIMESTAMP="$FILE_TIMESTAMP"
-                fi
-              fi
-            fi
-          done
+          # Build combined.json - group by login ID
+          # Use node.js for complex JSON manipulation
+          node << 'NODEJS'
+          const fs = require('fs');
+          const path = require('path');
 
-          # Fallback to current UTC time if no timestamp found
-          if [ -z "$LATEST_TIMESTAMP" ]; then
-            LATEST_TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-          fi
+          const accountsDir = 'accounts';
+          const files = fs.readdirSync(accountsDir)
+            .filter(f => f.endsWith('.json') && f !== 'combined.json' && f !== 'index.json');
 
-          # Build combined.json
-          echo '{' > accounts/combined.json
-          echo '  "last_updated": "'"$LATEST_TIMESTAMP"'",' >> accounts/combined.json
-          echo '  "accounts": [' >> accounts/combined.json
+          // Group files by login ID
+          const accountsMap = {};
 
-          # Process each account file
-          FIRST=true
-          for FILE in $ACCOUNT_FILES; do
-            if [ -f "$FILE" ]; then
-              if [ "$FIRST" = true ]; then
-                FIRST=false
-              else
-                echo ',' >> accounts/combined.json
-              fi
-              # Add account data (indented)
-              cat "$FILE" | jq '.' | sed 's/^/    /' >> accounts/combined.json
-            fi
-          done
+          for (const file of files) {
+            const filePath = path.join(accountsDir, file);
+            const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
-          echo '' >> accounts/combined.json
-          echo '  ]' >> accounts/combined.json
-          echo '}' >> accounts/combined.json
+            // Extract login ID from filename or content
+            const loginId = content.login ? String(content.login) : file.split('_')[0].replace('.json', '');
 
-          # Pretty print combined.json
-          cat accounts/combined.json | jq '.' > accounts/combined_temp.json
-          mv accounts/combined_temp.json accounts/combined.json
+            if (!accountsMap[loginId]) {
+              accountsMap[loginId] = {
+                login: parseInt(loginId),
+                server: content.server || '',
+                currency: content.currency || '',
+                balance: content.balance || 0,
+                equity: content.equity || 0,
+                margin: content.margin || 0,
+                free_margin: content.free_margin || 0,
+                margin_level: content.margin_level || 0,
+                profit: content.profit || 0,
+                last_updated: content.last_updated || '',
+                active_eas: []
+              };
+            }
+
+            // Update account data with latest values
+            const acc = accountsMap[loginId];
+            if (content.last_updated > acc.last_updated) {
+              acc.last_updated = content.last_updated;
+              acc.balance = content.balance;
+              acc.equity = content.equity;
+              acc.margin = content.margin;
+              acc.free_margin = content.free_margin;
+              acc.margin_level = content.margin_level;
+              acc.profit = content.profit;
+              acc.server = content.server;
+              acc.currency = content.currency;
+            }
+
+            // Add EA to active_eas list
+            const eaName = content.ea_name || content.name || file.split('_').slice(1).join('_').replace('.json', '') || 'Unknown';
+            if (!acc.active_eas.includes(eaName)) {
+              acc.active_eas.push(eaName);
+            }
+          }
+
+          // Convert to array and sort
+          const accounts = Object.values(accountsMap)
+            .map(acc => ({
+              id: String(acc.login),
+              login: acc.login,
+              server: acc.server,
+              currency: acc.currency,
+              balance: acc.balance,
+              equity: acc.equity,
+              margin: acc.margin,
+              free_margin: acc.free_margin,
+              margin_level: acc.margin_level,
+              profit: acc.profit,
+              last_updated: acc.last_updated,
+              active_eas: acc.active_eas.sort()
+            }))
+            .sort((a, b) => a.login - b.login);
+
+          // Find latest timestamp
+          const latestTimestamp = accounts.reduce((latest, acc) =>
+            acc.last_updated > latest ? acc.last_updated : latest, '');
+
+          const combined = {
+            last_updated: latestTimestamp,
+            accounts: accounts
+          };
+
+          fs.writeFileSync(path.join(accountsDir, 'combined.json'), JSON.stringify(combined, null, 2));
+          console.log('Generated combined.json with', accounts.length, 'accounts');
+          NODEJS
 
       - name: Commit changes
         run: |
