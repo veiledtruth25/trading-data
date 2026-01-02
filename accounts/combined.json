@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-02T22:58:02Z",
+  "last_updated": "2026-01-02T23:00:05Z",
   "accounts": [
     {
       "id": "20158621",
@@ -8,12 +8,12 @@
       "server": "WindsorBrokers1-Demo",
       "currency": "USC",
       "balance": 11983.46,
-      "equity": 11981.9,
-      "margin": 0,
-      "free_margin": 11981.9,
-      "margin_level": 0,
-      "profit": -1.56,
-      "last_updated": "2026-01-02T22:58:02Z",
+      "equity": 11979.32,
+      "margin": 1.8,
+      "free_margin": 11977.52,
+      "margin_level": 665517.78,
+      "profit": -4.14,
+      "last_updated": "2026-01-02T23:00:05Z",
       "active_eas": [
         "EA Trade Helper"
       ]
