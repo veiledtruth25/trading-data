@@ -89,6 +89,7 @@ jobs:
             if (!accountsMap[loginId]) {
               accountsMap[loginId] = {
                 login: parseInt(loginId),
+                name: content.name || '',
                 server: content.server || '',
                 currency: content.currency || '',
                 balance: content.balance || 0,
@@ -106,6 +107,7 @@ jobs:
             const acc = accountsMap[loginId];
             if (content.last_updated > acc.last_updated) {
               acc.last_updated = content.last_updated;
+              acc.name = content.name || acc.name;
               acc.balance = content.balance;
               acc.equity = content.equity;
               acc.margin = content.margin;
@@ -116,8 +118,8 @@ jobs:
               acc.currency = content.currency;
             }
 
-            // Add EA to active_eas list
-            const eaName = content.ea_name || content.name || file.split('_').slice(1).join('_').replace('.json', '') || 'Unknown';
+            // Add EA to active_eas list (use ea_name field, fallback to filename)
+            const eaName = content.ea_name || file.split('_').slice(1).join('_').replace('.json', '') || 'Unknown';
             if (!acc.active_eas.includes(eaName)) {
               acc.active_eas.push(eaName);
             }
@@ -128,6 +130,7 @@ jobs:
             .map(acc => ({
               id: String(acc.login),
               login: acc.login,
+              name: acc.name,
               server: acc.server,
               currency: acc.currency,
               balance: acc.balance,
