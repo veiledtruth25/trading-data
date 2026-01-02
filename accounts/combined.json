@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-02T18:53:51Z",
+  "last_updated": "2026-01-02T20:27:06Z",
   "accounts": [
     {
       "id": "20158621",
@@ -24,13 +24,13 @@
       "name": "Windsor cent 3",
       "server": "WITITSolutionsLtd-Real1",
       "currency": "USC",
-      "balance": 10275.46,
-      "equity": 10190.5,
-      "margin": 103.67,
-      "free_margin": 10086.83,
-      "margin_level": 9829.75,
-      "profit": -84.96,
-      "last_updated": "2026-01-02T18:15:04Z",
+      "balance": 10379.7,
+      "equity": 10379.7,
+      "margin": 0,
+      "free_margin": 10379.7,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-02T20:27:06Z",
       "active_eas": [
         "EA Trade Helper"
       ]
