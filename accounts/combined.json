@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-03T15:35:25Z",
+  "last_updated": "2026-01-03T15:41:44Z",
   "accounts": [
     {
       "id": "20158621",
@@ -36,6 +36,40 @@
       ]
     },
     {
+      "id": "80145216",
+      "login": 80145216,
+      "name": "Ardans Ardans",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 11600,
+      "equity": 11600,
+      "margin": 0,
+      "free_margin": 11600,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-03T15:39:06Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
+      "id": "80145228",
+      "login": 80145228,
+      "name": "FAISAL FAISAL",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 5800,
+      "equity": 5800,
+      "margin": 0,
+      "free_margin": 5800,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-03T15:41:44Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
       "id": "103183855",
       "login": 103183855,
       "name": "Abi Manyu",
@@ -47,7 +81,7 @@
       "free_margin": 9956.05,
       "margin_level": 33987.17,
       "profit": -4.4,
-      "last_updated": "2026-01-03T15:35:25Z",
+      "last_updated": "2026-01-03T15:40:26Z",
       "active_eas": [
         "EA Trade Helper",
         "GoldenTrade"
