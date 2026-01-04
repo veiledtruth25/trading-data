@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-04T02:58:23Z",
+  "last_updated": "2026-01-04T03:04:53Z",
   "accounts": [
     {
       "id": "20158621",
@@ -36,6 +36,40 @@
       ]
     },
     {
+      "id": "80144436",
+      "login": 80144436,
+      "name": "fikri fikri",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 5182,
+      "equity": 5182,
+      "margin": 0,
+      "free_margin": 5182,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-04T03:04:53Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
+      "id": "80144607",
+      "login": 80144607,
+      "name": "Cross Masarel Lamgogo B",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 5941.9,
+      "equity": 5941.9,
+      "margin": 0,
+      "free_margin": 5941.9,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-04T03:02:26Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
       "id": "80145216",
       "login": 80145216,
       "name": "Ardans Ardans",
@@ -47,7 +81,7 @@
       "free_margin": 11600,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-04T02:55:17Z",
+      "last_updated": "2026-01-04T03:01:20Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -64,7 +98,7 @@
       "free_margin": 5800,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-04T02:58:23Z",
+      "last_updated": "2026-01-04T03:03:38Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -81,7 +115,7 @@
       "free_margin": 9956.05,
       "margin_level": 33987.17,
       "profit": -4.4,
-      "last_updated": "2026-01-04T02:57:17Z",
+      "last_updated": "2026-01-04T03:02:17Z",
       "active_eas": [
         "EA Trade Helper",
         "GoldenTrade"
