@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-06T15:02:54Z",
+  "last_updated": "2026-01-06T15:17:51Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 44500.5,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:36Z",
+      "last_updated": "2026-01-06T15:16:36Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -132,7 +132,7 @@
       "free_margin": 15978.55,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:19Z",
+      "last_updated": "2026-01-06T15:16:19Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -149,7 +149,7 @@
       "free_margin": 39228.75,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:41Z",
+      "last_updated": "2026-01-06T15:16:42Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -166,7 +166,7 @@
       "free_margin": 6417.3,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:59Z",
+      "last_updated": "2026-01-06T15:16:59Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -183,7 +183,7 @@
       "free_margin": 7639.1,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:02:20Z",
+      "last_updated": "2026-01-06T15:17:20Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -200,7 +200,7 @@
       "free_margin": 3581,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T14:58:54Z",
+      "last_updated": "2026-01-06T15:13:54Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -217,7 +217,7 @@
       "free_margin": 16341.7,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:02:54Z",
+      "last_updated": "2026-01-06T15:12:54Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -234,7 +234,7 @@
       "free_margin": 9575.6,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:02:43Z",
+      "last_updated": "2026-01-06T15:12:43Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -251,7 +251,7 @@
       "free_margin": 7306.9,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T14:58:54Z",
+      "last_updated": "2026-01-06T15:13:54Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -268,7 +268,7 @@
       "free_margin": 3598.15,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T14:59:39Z",
+      "last_updated": "2026-01-06T15:14:39Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -285,24 +285,7 @@
       "free_margin": 3152.35,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:14Z",
-      "active_eas": [
-        "GoldenTrade"
-      ]
-    },
-    {
-      "id": "80146009",
-      "login": 80146009,
-      "name": "Muhammad Sukriyadi",
-      "server": "WindsorBrokers1-Real1",
-      "currency": "USC",
-      "balance": 5800,
-      "equity": 5800,
-      "margin": 0,
-      "free_margin": 5800,
-      "margin_level": 0,
-      "profit": 0,
-      "last_updated": "2026-01-06T14:58:27Z",
+      "last_updated": "2026-01-06T15:16:14Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -319,7 +302,7 @@
       "free_margin": 150000,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:01:15Z",
+      "last_updated": "2026-01-06T15:16:15Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -336,7 +319,24 @@
       "free_margin": 150000,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-06T15:02:51Z",
+      "last_updated": "2026-01-06T15:17:51Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
+      "id": "80146470",
+      "login": 80146470,
+      "name": "NAURY NUR FUADY",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 150000,
+      "equity": 150000,
+      "margin": 0,
+      "free_margin": 150000,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-06T15:17:32Z",
       "active_eas": [
         "GoldenTrade"
       ]
