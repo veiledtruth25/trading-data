@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T00:34:12Z",
+  "last_updated": "2026-01-19T00:40:18Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 817.57,
       "margin_level": 0,
       "profit": 23.35,
-      "last_updated": "2026-01-19T00:34:12Z",
+      "last_updated": "2026-01-19T00:39:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 1353.86,
-      "equity": 1351.67,
-      "margin": 0,
-      "free_margin": 1351.67,
-      "margin_level": 0,
-      "profit": -2.19,
-      "last_updated": "2026-01-19T00:34:10Z",
+      "balance": 1335.86,
+      "equity": 1351.73,
+      "margin": 56.11,
+      "free_margin": 1295.62,
+      "margin_level": 2409.07,
+      "profit": 15.87,
+      "last_updated": "2026-01-19T00:39:10Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 148853.85,
-      "equity": 148907.5,
+      "balance": 147925.15,
+      "equity": 148820.55,
       "margin": 0,
-      "free_margin": 148907.5,
+      "free_margin": 148820.55,
       "margin_level": 0,
-      "profit": 53.65,
-      "last_updated": "2026-01-19T00:30:18Z",
+      "profit": 895.4,
+      "last_updated": "2026-01-19T00:40:18Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -591,7 +591,7 @@
       "free_margin": 132744,
       "margin_level": 0,
       "profit": -59.4,
-      "last_updated": "2026-01-19T00:31:35Z",
+      "last_updated": "2026-01-19T00:36:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
