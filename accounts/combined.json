@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T01:49:12Z",
+  "last_updated": "2026-01-19T01:59:12Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 866.37,
-      "equity": 912.72,
+      "equity": 913.12,
       "margin": 0,
-      "free_margin": 912.72,
+      "free_margin": 913.12,
       "margin_level": 0,
-      "profit": 46.35,
-      "last_updated": "2026-01-19T01:49:12Z",
+      "profit": 46.75,
+      "last_updated": "2026-01-19T01:59:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 1226.12,
-      "equity": 1282.19,
+      "equity": 1288.55,
       "margin": 56.03,
-      "free_margin": 1226.16,
-      "margin_level": 2288.4,
-      "profit": 56.07,
-      "last_updated": "2026-01-19T01:29:10Z",
+      "free_margin": 1232.52,
+      "margin_level": 2299.75,
+      "profit": 62.43,
+      "last_updated": "2026-01-19T01:59:10Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 148328.45,
-      "equity": 149967.55,
+      "equity": 149982.35,
       "margin": 0,
-      "free_margin": 149967.55,
+      "free_margin": 149982.35,
       "margin_level": 0,
-      "profit": 1639.1,
-      "last_updated": "2026-01-19T01:45:18Z",
+      "profit": 1653.9,
+      "last_updated": "2026-01-19T01:55:18Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 132227.55,
-      "equity": 133676.25,
+      "equity": 133702.65,
       "margin": 0,
-      "free_margin": 133676.25,
+      "free_margin": 133702.65,
       "margin_level": 0,
-      "profit": 1448.7,
-      "last_updated": "2026-01-19T01:46:35Z",
+      "profit": 1475.1,
+      "last_updated": "2026-01-19T01:56:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
