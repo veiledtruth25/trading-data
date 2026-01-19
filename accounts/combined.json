@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T12:29:17Z",
+  "last_updated": "2026-01-19T12:36:50Z",
   "accounts": [
     {
       "id": "0",
@@ -41,13 +41,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 727.27,
-      "equity": 742.47,
-      "margin": 93.45,
-      "free_margin": 649.02,
-      "margin_level": 794.51,
-      "profit": 15.2,
-      "last_updated": "2026-01-19T12:29:17Z",
+      "balance": 692.97,
+      "equity": 713.97,
+      "margin": 0,
+      "free_margin": 713.97,
+      "margin_level": 0,
+      "profit": 21,
+      "last_updated": "2026-01-19T12:34:17Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 1040.06,
-      "equity": 1028.27,
-      "margin": 56.02,
-      "free_margin": 972.25,
-      "margin_level": 1835.54,
-      "profit": -11.79,
-      "last_updated": "2026-01-19T12:29:16Z",
+      "balance": 1019.48,
+      "equity": 1010.81,
+      "margin": 0,
+      "free_margin": 1010.81,
+      "margin_level": 0,
+      "profit": -8.67,
+      "last_updated": "2026-01-19T12:34:16Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -574,7 +574,7 @@
       "free_margin": 147671.7,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-19T12:25:23Z",
+      "last_updated": "2026-01-19T12:35:24Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 132646.65,
-      "equity": 133130.1,
+      "equity": 133016.25,
       "margin": 1540.65,
-      "free_margin": 131589.45,
-      "margin_level": 8641.16,
-      "profit": 483.45,
-      "last_updated": "2026-01-19T12:26:50Z",
+      "free_margin": 131475.6,
+      "margin_level": 8633.77,
+      "profit": 369.6,
+      "last_updated": "2026-01-19T12:36:50Z",
       "active_eas": [
         "GoldenTrade"
       ]
