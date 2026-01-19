@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T11:24:16Z",
+  "last_updated": "2026-01-19T11:30:23Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 727.27,
-      "equity": 810.87,
+      "equity": 784.17,
       "margin": 93.45,
-      "free_margin": 717.42,
-      "margin_level": 867.7,
-      "profit": 83.6,
-      "last_updated": "2026-01-19T11:24:16Z",
+      "free_margin": 690.72,
+      "margin_level": 839.13,
+      "profit": 56.9,
+      "last_updated": "2026-01-19T11:29:17Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 145026.2,
-      "equity": 147701.3,
+      "balance": 147671.7,
+      "equity": 147671.7,
       "margin": 0,
-      "free_margin": 147701.3,
+      "free_margin": 147671.7,
       "margin_level": 0,
-      "profit": 2675.1,
-      "last_updated": "2026-01-19T11:20:23Z",
+      "profit": 0,
+      "last_updated": "2026-01-19T11:30:23Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -585,13 +585,13 @@
       "name": "MUHAMMAD ADNAN ANWAR S IP",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 131518.05,
-      "equity": 131755.65,
-      "margin": 1540.09,
-      "free_margin": 130215.56,
-      "margin_level": 8555.06,
-      "profit": 237.6,
-      "last_updated": "2026-01-19T11:21:50Z",
+      "balance": 132646.65,
+      "equity": 131914.05,
+      "margin": 1540.65,
+      "free_margin": 130373.4,
+      "margin_level": 8562.23,
+      "profit": -732.6,
+      "last_updated": "2026-01-19T11:26:50Z",
       "active_eas": [
         "GoldenTrade"
       ]
