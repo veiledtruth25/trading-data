@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-19T05:29:13Z",
+  "last_updated": "2026-01-19T05:36:38Z",
   "accounts": [
     {
       "id": "0",
@@ -41,13 +41,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 866.37,
-      "equity": 912.32,
-      "margin": 0,
-      "free_margin": 912.32,
-      "margin_level": 0,
-      "profit": 45.95,
-      "last_updated": "2026-01-19T05:29:13Z",
+      "balance": 836.37,
+      "equity": 902.62,
+      "margin": 93.3,
+      "free_margin": 809.32,
+      "margin_level": 967.44,
+      "profit": 66.25,
+      "last_updated": "2026-01-19T05:34:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 1226.12,
-      "equity": 1216.55,
-      "margin": 56.03,
-      "free_margin": 1160.52,
-      "margin_level": 2171.25,
-      "profit": -9.57,
-      "last_updated": "2026-01-19T05:24:11Z",
+      "balance": 1208.12,
+      "equity": 1203.71,
+      "margin": 0,
+      "free_margin": 1203.71,
+      "margin_level": 0,
+      "profit": -4.41,
+      "last_updated": "2026-01-19T05:34:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -574,7 +574,7 @@
       "free_margin": 147773.45,
       "margin_level": 0,
       "profit": 1665,
-      "last_updated": "2026-01-19T05:25:19Z",
+      "last_updated": "2026-01-19T05:35:19Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 132224.25,
-      "equity": 133689.45,
+      "equity": 133798.35,
       "margin": 3079.38,
-      "free_margin": 130610.07,
-      "margin_level": 4341.44,
-      "profit": 1465.2,
-      "last_updated": "2026-01-19T05:26:38Z",
+      "free_margin": 130718.97,
+      "margin_level": 4344.98,
+      "profit": 1574.1,
+      "last_updated": "2026-01-19T05:36:38Z",
       "active_eas": [
         "GoldenTrade"
       ]
