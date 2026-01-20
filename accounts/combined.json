@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-20T06:55:36Z",
+  "last_updated": "2026-01-20T07:02:11Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 534.87,
-      "equity": 613.22,
+      "equity": 595.72,
       "margin": 94.14,
-      "free_margin": 519.08,
-      "margin_level": 651.39,
-      "profit": 78.35,
-      "last_updated": "2026-01-20T06:54:42Z",
+      "free_margin": 501.58,
+      "margin_level": 632.8,
+      "profit": 60.85,
+      "last_updated": "2026-01-20T06:59:42Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 857.06,
-      "equity": 890.06,
+      "equity": 890.27,
       "margin": 0,
-      "free_margin": 890.06,
+      "free_margin": 890.27,
       "margin_level": 0,
-      "profit": 33,
-      "last_updated": "2026-01-20T06:54:40Z",
+      "profit": 33.21,
+      "last_updated": "2026-01-20T06:59:41Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 147962.15,
-      "equity": 149305.25,
+      "equity": 149312.65,
       "margin": 0,
-      "free_margin": 149305.25,
+      "free_margin": 149312.65,
       "margin_level": 0,
-      "profit": 1343.1,
-      "last_updated": "2026-01-20T06:55:36Z",
+      "profit": 1350.5,
+      "last_updated": "2026-01-20T07:00:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 133481.55,
-      "equity": 134676.15,
+      "equity": 134702.55,
       "margin": 0,
-      "free_margin": 134676.15,
+      "free_margin": 134702.55,
       "margin_level": 0,
-      "profit": 1194.6,
-      "last_updated": "2026-01-20T06:52:11Z",
+      "profit": 1221,
+      "last_updated": "2026-01-20T07:02:11Z",
       "active_eas": [
         "GoldenTrade"
       ]
