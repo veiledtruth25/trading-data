@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-20T05:20:35Z",
+  "last_updated": "2026-01-20T05:27:10Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 498.27,
-      "equity": 555.82,
+      "equity": 555.92,
       "margin": 0,
-      "free_margin": 555.82,
+      "free_margin": 555.92,
       "margin_level": 0,
-      "profit": 57.55,
-      "last_updated": "2026-01-20T05:19:41Z",
+      "profit": 57.65,
+      "last_updated": "2026-01-20T05:24:42Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 832.1,
-      "equity": 839.15,
+      "equity": 823.73,
       "margin": 56.36,
-      "free_margin": 782.79,
-      "margin_level": 1488.91,
-      "profit": 7.05,
-      "last_updated": "2026-01-20T05:19:40Z",
+      "free_margin": 767.37,
+      "margin_level": 1461.55,
+      "profit": -8.37,
+      "last_updated": "2026-01-20T05:24:40Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 145361.05,
-      "equity": 146476.6,
+      "equity": 146482.15,
       "margin": 0,
-      "free_margin": 146476.6,
+      "free_margin": 146482.15,
       "margin_level": 0,
-      "profit": 1115.55,
-      "last_updated": "2026-01-20T05:20:35Z",
+      "profit": 1121.1,
+      "last_updated": "2026-01-20T05:25:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 131181.45,
-      "equity": 132201.15,
+      "equity": 132179.7,
       "margin": 0,
-      "free_margin": 132201.15,
+      "free_margin": 132179.7,
       "margin_level": 0,
-      "profit": 1019.7,
-      "last_updated": "2026-01-20T05:17:10Z",
+      "profit": 998.25,
+      "last_updated": "2026-01-20T05:27:10Z",
       "active_eas": [
         "GoldenTrade"
       ]
