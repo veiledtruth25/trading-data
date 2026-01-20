@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-20T00:37:08Z",
+  "last_updated": "2026-01-20T00:44:35Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 517.92,
-      "equity": 600.67,
+      "equity": 625.37,
       "margin": 93.48,
-      "free_margin": 507.19,
-      "margin_level": 642.57,
-      "profit": 82.75,
-      "last_updated": "2026-01-20T00:34:35Z",
+      "free_margin": 531.89,
+      "margin_level": 668.99,
+      "profit": 107.45,
+      "last_updated": "2026-01-20T00:44:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -64,7 +64,7 @@
       "free_margin": 848.9,
       "margin_level": 0,
       "profit": 10.47,
-      "last_updated": "2026-01-20T00:34:35Z",
+      "last_updated": "2026-01-20T00:44:35Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 146513.6,
-      "equity": 145858.7,
-      "margin": 3450.63,
-      "free_margin": 142408.07,
-      "margin_level": 4227.02,
-      "profit": -654.9,
-      "last_updated": "2026-01-20T00:35:33Z",
+      "balance": 145403.6,
+      "equity": 145213.05,
+      "margin": 0,
+      "free_margin": 145213.05,
+      "margin_level": 0,
+      "profit": -190.55,
+      "last_updated": "2026-01-20T00:40:33Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 131176.5,
-      "equity": 131009.85,
-      "margin": 0,
-      "free_margin": 131009.85,
-      "margin_level": 0,
-      "profit": -166.65,
-      "last_updated": "2026-01-20T00:37:08Z",
+      "equity": 130952.1,
+      "margin": 1538.9,
+      "free_margin": 129413.2,
+      "margin_level": 8509.46,
+      "profit": -224.4,
+      "last_updated": "2026-01-20T00:42:08Z",
       "active_eas": [
         "GoldenTrade"
       ]
