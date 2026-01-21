@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-21T07:34:58Z",
+  "last_updated": "2026-01-21T07:40:58Z",
   "accounts": [
     {
       "id": "0",
@@ -41,13 +41,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 744.37,
-      "equity": 805.62,
-      "margin": 48.41,
-      "free_margin": 757.21,
-      "margin_level": 1664.16,
-      "profit": 61.25,
-      "last_updated": "2026-01-21T07:34:58Z",
+      "balance": 714.37,
+      "equity": 764.57,
+      "margin": 48.44,
+      "free_margin": 716.13,
+      "margin_level": 1578.39,
+      "profit": 50.2,
+      "last_updated": "2026-01-21T07:39:58Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 920.39,
-      "equity": 945.14,
-      "margin": 58.13,
-      "free_margin": 887.01,
-      "margin_level": 1625.91,
-      "profit": 24.75,
-      "last_updated": "2026-01-21T07:25:54Z",
+      "balance": 883.91,
+      "equity": 865.34,
+      "margin": 29.06,
+      "free_margin": 836.28,
+      "margin_level": 2977.77,
+      "profit": -18.57,
+      "last_updated": "2026-01-21T07:40:54Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 168857.9,
-      "equity": 171401.65,
+      "equity": 171431.25,
       "margin": 0,
-      "free_margin": 171401.65,
+      "free_margin": 171431.25,
       "margin_level": 0,
-      "profit": 2543.75,
-      "last_updated": "2026-01-21T07:30:58Z",
+      "profit": 2573.35,
+      "last_updated": "2026-01-21T07:40:58Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -591,7 +591,7 @@
       "free_margin": 154420.05,
       "margin_level": 0,
       "profit": 2296.8,
-      "last_updated": "2026-01-21T07:32:31Z",
+      "last_updated": "2026-01-21T07:37:32Z",
       "active_eas": [
         "GoldenTrade"
       ]
