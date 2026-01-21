@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-21T09:20:58Z",
+  "last_updated": "2026-01-21T09:27:34Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 757.07,
-      "equity": 795.02,
+      "equity": 794.32,
       "margin": 0,
-      "free_margin": 795.02,
+      "free_margin": 794.32,
       "margin_level": 0,
-      "profit": 37.95,
-      "last_updated": "2026-01-21T09:19:58Z",
+      "profit": 37.25,
+      "last_updated": "2026-01-21T09:24:59Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 902.3,
-      "equity": 946.61,
+      "equity": 946.4,
       "margin": 0,
-      "free_margin": 946.61,
+      "free_margin": 946.4,
       "margin_level": 0,
-      "profit": 44.31,
-      "last_updated": "2026-01-21T09:10:56Z",
+      "profit": 44.1,
+      "last_updated": "2026-01-21T09:25:57Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 166919.1,
-      "equity": 167337.2,
-      "margin": 0,
-      "free_margin": 167337.2,
-      "margin_level": 0,
-      "profit": 418.1,
-      "last_updated": "2026-01-21T09:20:58Z",
+      "balance": 165888.65,
+      "equity": 168497.15,
+      "margin": 1796.19,
+      "free_margin": 166700.96,
+      "margin_level": 9380.81,
+      "profit": 2608.5,
+      "last_updated": "2026-01-21T09:25:58Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -585,13 +585,13 @@
       "name": "MUHAMMAD ADNAN ANWAR S IP",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 151956.6,
-      "equity": 152418.6,
-      "margin": 0,
-      "free_margin": 152418.6,
-      "margin_level": 0,
-      "profit": 462,
-      "last_updated": "2026-01-21T09:17:33Z",
+      "balance": 150808.2,
+      "equity": 154771.5,
+      "margin": 3208.66,
+      "free_margin": 151562.84,
+      "margin_level": 4823.56,
+      "profit": 3963.3,
+      "last_updated": "2026-01-21T09:27:34Z",
       "active_eas": [
         "GoldenTrade"
       ]
