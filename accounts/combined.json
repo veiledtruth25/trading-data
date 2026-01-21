@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-21T09:54:58Z",
+  "last_updated": "2026-01-21T10:02:36Z",
   "accounts": [
     {
       "id": "0",
@@ -42,12 +42,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 697.77,
-      "equity": 735.12,
+      "equity": 735.27,
       "margin": 0,
-      "free_margin": 735.12,
+      "free_margin": 735.27,
       "margin_level": 0,
-      "profit": 37.35,
-      "last_updated": "2026-01-21T09:54:58Z",
+      "profit": 37.5,
+      "last_updated": "2026-01-21T09:59:58Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 927.77,
-      "equity": 939.47,
+      "equity": 945.95,
       "margin": 29.21,
-      "free_margin": 910.26,
-      "margin_level": 3216.26,
-      "profit": 11.7,
-      "last_updated": "2026-01-21T09:50:57Z",
+      "free_margin": 916.74,
+      "margin_level": 3238.45,
+      "profit": 18.18,
+      "last_updated": "2026-01-21T09:55:56Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -574,7 +574,7 @@
       "free_margin": 169681.15,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-21T09:50:59Z",
+      "last_updated": "2026-01-21T10:00:59Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -585,13 +585,13 @@
       "name": "MUHAMMAD ADNAN ANWAR S IP",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 154165.95,
-      "equity": 153411.9,
-      "margin": 1606,
-      "free_margin": 151805.9,
-      "margin_level": 9552.42,
-      "profit": -754.05,
-      "last_updated": "2026-01-21T09:52:36Z",
+      "balance": 153017.55,
+      "equity": 152418.6,
+      "margin": 1604.07,
+      "free_margin": 150814.53,
+      "margin_level": 9501.99,
+      "profit": -598.95,
+      "last_updated": "2026-01-21T10:02:36Z",
       "active_eas": [
         "GoldenTrade"
       ]
