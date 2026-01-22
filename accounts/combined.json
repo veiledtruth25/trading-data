@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-22T00:17:40Z",
+  "last_updated": "2026-01-22T00:26:06Z",
   "accounts": [
     {
       "id": "0",
@@ -41,13 +41,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 328.22,
-      "equity": 359.82,
-      "margin": 95.71,
-      "free_margin": 264.11,
-      "margin_level": 375.95,
-      "profit": 31.6,
-      "last_updated": "2026-01-22T00:15:12Z",
+      "balance": 298.22,
+      "equity": 324.42,
+      "margin": 0,
+      "free_margin": 324.42,
+      "margin_level": 0,
+      "profit": 26.2,
+      "last_updated": "2026-01-22T00:25:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 925.16,
-      "equity": 934.76,
+      "equity": 930.26,
       "margin": 57.42,
-      "free_margin": 877.34,
-      "margin_level": 1627.93,
-      "profit": 9.6,
-      "last_updated": "2026-01-22T00:16:05Z",
+      "free_margin": 872.84,
+      "margin_level": 1620.1,
+      "profit": 5.1,
+      "last_updated": "2026-01-22T00:21:06Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 166845.1,
-      "equity": 167838.55,
+      "equity": 167938.45,
       "margin": 3540.08,
-      "free_margin": 164298.47,
-      "margin_level": 4741.09,
-      "profit": 993.45,
-      "last_updated": "2026-01-22T00:16:06Z",
+      "free_margin": 164398.37,
+      "margin_level": 4743.92,
+      "profit": 1093.35,
+      "last_updated": "2026-01-22T00:26:06Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 145585.95,
-      "equity": 146245.95,
+      "equity": 146674.95,
       "margin": 3157.39,
-      "free_margin": 143088.56,
-      "margin_level": 4631.86,
-      "profit": 660,
-      "last_updated": "2026-01-22T00:17:40Z",
+      "free_margin": 143517.56,
+      "margin_level": 4645.45,
+      "profit": 1089,
+      "last_updated": "2026-01-22T00:22:40Z",
       "active_eas": [
         "GoldenTrade"
       ]
