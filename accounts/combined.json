@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-23T03:31:42Z",
+  "last_updated": "2026-01-23T03:38:05Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-23T03:30:26Z",
+      "last_updated": "2026-01-23T03:35:26Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 657.59,
-      "equity": 706.97,
-      "margin": 59.38,
-      "free_margin": 647.59,
-      "margin_level": 1190.59,
-      "profit": 49.38,
-      "last_updated": "2026-01-23T03:26:37Z",
+      "balance": 639.59,
+      "equity": 639.11,
+      "margin": 0,
+      "free_margin": 639.11,
+      "margin_level": 0,
+      "profit": -0.48,
+      "last_updated": "2026-01-23T03:36:38Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 141831.25,
-      "equity": 144508.2,
-      "margin": 3664.78,
-      "free_margin": 140843.42,
-      "margin_level": 3943.16,
-      "profit": 2676.95,
-      "last_updated": "2026-01-23T03:31:42Z",
+      "balance": 140682.4,
+      "equity": 141816.45,
+      "margin": 0,
+      "free_margin": 141816.45,
+      "margin_level": 0,
+      "profit": 1134.05,
+      "last_updated": "2026-01-23T03:36:42Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 144472.2,
-      "equity": 114254.1,
+      "equity": 111551.4,
       "margin": 3203.49,
-      "free_margin": 111050.61,
-      "margin_level": 3566.55,
-      "profit": -30218.1,
-      "last_updated": "2026-01-23T03:28:05Z",
+      "free_margin": 108347.91,
+      "margin_level": 3482.18,
+      "profit": -32920.8,
+      "last_updated": "2026-01-23T03:38:05Z",
       "active_eas": [
         "GoldenTrade"
       ]
