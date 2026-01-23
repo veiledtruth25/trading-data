@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-23T02:08:04Z",
+  "last_updated": "2026-01-23T02:16:40Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-23T02:05:26Z",
+      "last_updated": "2026-01-23T02:15:26Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 713.12,
-      "equity": 713.63,
+      "equity": 713.21,
       "margin": 0,
-      "free_margin": 713.63,
+      "free_margin": 713.21,
       "margin_level": 0,
-      "profit": 0.51,
-      "last_updated": "2026-01-23T02:01:35Z",
+      "profit": 0.09,
+      "last_updated": "2026-01-23T02:16:37Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -92,13 +92,13 @@
       "name": "EKA RITAWATI",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 10294.6,
-      "equity": 10158.38,
-      "margin": 258.49,
-      "free_margin": 9899.89,
-      "margin_level": 3929.89,
-      "profit": -136.22,
-      "last_updated": "2026-01-23T02:00:04Z",
+      "balance": 10408.21,
+      "equity": 10301.13,
+      "margin": 123.84,
+      "free_margin": 10177.29,
+      "margin_level": 8318.1,
+      "profit": -107.08,
+      "last_updated": "2026-01-23T02:14:46Z",
       "active_eas": [
         "EA Trade Helper"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 142941.25,
-      "equity": 144053.1,
+      "equity": 144066.05,
       "margin": 0,
-      "free_margin": 144053.1,
+      "free_margin": 144066.05,
       "margin_level": 0,
-      "profit": 1111.85,
-      "last_updated": "2026-01-23T02:06:40Z",
+      "profit": 1124.8,
+      "last_updated": "2026-01-23T02:16:40Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 145239.45,
-      "equity": 112437.45,
+      "equity": 113344.95,
       "margin": 3203.49,
-      "free_margin": 109233.96,
-      "margin_level": 3509.84,
-      "profit": -32802,
-      "last_updated": "2026-01-23T02:08:04Z",
+      "free_margin": 110141.46,
+      "margin_level": 3538.17,
+      "profit": -31894.5,
+      "last_updated": "2026-01-23T02:13:04Z",
       "active_eas": [
         "GoldenTrade"
       ]
