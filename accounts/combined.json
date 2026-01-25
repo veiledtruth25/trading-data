@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-23T21:58:33Z",
+  "last_updated": "2026-01-25T23:01:19Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-23T21:55:30Z",
+      "last_updated": "2026-01-25T23:01:16Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -64,7 +64,7 @@
       "free_margin": 722.21,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-23T21:51:53Z",
+      "last_updated": "2026-01-25T23:01:19Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -92,13 +92,13 @@
       "name": "EKA RITAWATI",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 11247.26,
-      "equity": 10095.71,
-      "margin": 248.12,
-      "free_margin": 9847.59,
-      "margin_level": 4068.88,
-      "profit": -1151.55,
-      "last_updated": "2026-01-23T20:47:31Z",
+      "balance": 8815.37,
+      "equity": 8815.37,
+      "margin": 0,
+      "free_margin": 8815.37,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-25T08:38:47Z",
       "active_eas": [
         "EA Trade Helper"
       ]
@@ -574,7 +574,7 @@
       "free_margin": 136384.85,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-23T21:56:49Z",
+      "last_updated": "2026-01-25T23:00:48Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 155390.25,
-      "equity": 110312.25,
+      "equity": 103959.75,
       "margin": 3203.49,
-      "free_margin": 107108.76,
-      "margin_level": 3443.5,
-      "profit": -45078,
-      "last_updated": "2026-01-23T21:58:33Z",
+      "free_margin": 100756.26,
+      "margin_level": 3245.2,
+      "profit": -51430.5,
+      "last_updated": "2026-01-25T23:01:11Z",
       "active_eas": [
         "GoldenTrade"
       ]
