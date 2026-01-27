@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-27T01:26:28Z",
+  "last_updated": "2026-01-27T01:36:23Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-27T01:21:34Z",
+      "last_updated": "2026-01-27T01:31:34Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -59,12 +59,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 624.62,
-      "equity": 662,
+      "equity": 696.2,
       "margin": 91.09,
-      "free_margin": 570.91,
-      "margin_level": 726.75,
-      "profit": 37.38,
-      "last_updated": "2026-01-27T01:26:28Z",
+      "free_margin": 605.11,
+      "margin_level": 764.3,
+      "profit": 71.58,
+      "last_updated": "2026-01-27T01:31:28Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 152481.7,
-      "equity": 152450.25,
+      "balance": 150084.1,
+      "equity": 150017.5,
       "margin": 0,
-      "free_margin": 152450.25,
+      "free_margin": 150017.5,
       "margin_level": 0,
-      "profit": -31.45,
-      "last_updated": "2026-01-27T01:26:07Z",
+      "profit": -66.6,
+      "last_updated": "2026-01-27T01:36:07Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 167662.95,
-      "equity": 95280.75,
+      "equity": 95368.2,
       "margin": 1601.75,
-      "free_margin": 93679,
-      "margin_level": 5948.54,
-      "profit": -72382.2,
-      "last_updated": "2026-01-27T01:26:23Z",
+      "free_margin": 93766.45,
+      "margin_level": 5954,
+      "profit": -72294.75,
+      "last_updated": "2026-01-27T01:36:23Z",
       "active_eas": [
         "GoldenTrade"
       ]
