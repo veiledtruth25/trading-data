@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-27T00:01:23Z",
+  "last_updated": "2026-01-27T00:06:30Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-26T23:56:29Z",
+      "last_updated": "2026-01-27T00:06:30Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 590.18,
-      "equity": 590.18,
-      "margin": 0,
-      "free_margin": 590.18,
-      "margin_level": 0,
-      "profit": 0,
-      "last_updated": "2026-01-26T23:51:28Z",
+      "balance": 572.18,
+      "equity": 598.52,
+      "margin": 60.59,
+      "free_margin": 537.93,
+      "margin_level": 987.82,
+      "profit": 26.34,
+      "last_updated": "2026-01-27T00:06:27Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -568,13 +568,13 @@
       "name": "Dini Kartikawati Prihatini",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 140062.65,
-      "equity": 139596.45,
-      "margin": 0,
-      "free_margin": 139596.45,
-      "margin_level": 0,
-      "profit": -466.2,
-      "last_updated": "2026-01-27T00:01:06Z",
+      "balance": 138671.45,
+      "equity": 141616.65,
+      "margin": 3732.93,
+      "free_margin": 137883.72,
+      "margin_level": 3793.71,
+      "profit": 2945.2,
+      "last_updated": "2026-01-27T00:06:06Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -586,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 167662.95,
-      "equity": 99197.85,
+      "equity": 97368,
       "margin": 1601.75,
-      "free_margin": 97596.1,
-      "margin_level": 6193.09,
-      "profit": -68465.1,
-      "last_updated": "2026-01-27T00:01:23Z",
+      "free_margin": 95766.25,
+      "margin_level": 6078.85,
+      "profit": -70294.95,
+      "last_updated": "2026-01-27T00:06:24Z",
       "active_eas": [
         "GoldenTrade"
       ]
