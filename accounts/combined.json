@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-29T05:51:53Z",
+  "last_updated": "2026-01-29T05:58:10Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-29T05:51:51Z",
+      "last_updated": "2026-01-29T05:56:51Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -64,7 +64,7 @@
       "free_margin": 658.43,
       "margin_level": 0,
       "profit": 25.68,
-      "last_updated": "2026-01-29T05:51:53Z",
+      "last_updated": "2026-01-29T05:56:52Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 115324.5,
-      "equity": 115324.5,
-      "margin": 0,
-      "free_margin": 115324.5,
-      "margin_level": 0,
-      "profit": 0,
-      "last_updated": "2026-01-29T05:48:09Z",
+      "equity": 115226.5,
+      "margin": 1112.13,
+      "free_margin": 114114.37,
+      "margin_level": 10360.88,
+      "profit": -98,
+      "last_updated": "2026-01-29T05:58:10Z",
       "active_eas": [
         "GoldenTrade"
       ]
