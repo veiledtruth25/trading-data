@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-29T13:28:19Z",
+  "last_updated": "2026-01-29T13:38:19Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-29T13:26:58Z",
+      "last_updated": "2026-01-29T13:36:59Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -64,7 +64,7 @@
       "free_margin": 290.36,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-29T13:16:58Z",
+      "last_updated": "2026-01-29T13:36:59Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -359,6 +359,23 @@
       ]
     },
     {
+      "id": "80146009",
+      "login": 80146009,
+      "name": "Muhammad Sukriyadi",
+      "server": "WindsorBrokers1-Real1",
+      "currency": "USC",
+      "balance": 5002.4,
+      "equity": 5002.4,
+      "margin": 0,
+      "free_margin": 5002.4,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-01-18T15:02:38Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
       "id": "80146014",
       "login": 80146014,
       "name": "Arif Fadeli Badarrusmanto",
@@ -552,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 118695.5,
-      "equity": 112218.5,
+      "equity": 111022.5,
       "margin": 1117.05,
-      "free_margin": 111101.45,
-      "margin_level": 10045.97,
-      "profit": -6477,
-      "last_updated": "2026-01-29T13:28:19Z",
+      "free_margin": 109905.45,
+      "margin_level": 9938.9,
+      "profit": -7673,
+      "last_updated": "2026-01-29T13:38:19Z",
       "active_eas": [
         "GoldenTrade"
       ]
