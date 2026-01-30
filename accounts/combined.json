@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-30T01:23:29Z",
+  "last_updated": "2026-01-30T01:33:29Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9.17,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-01-30T01:22:15Z",
+      "last_updated": "2026-01-30T01:32:15Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -58,13 +58,13 @@
       "name": "NUR ROSYID",
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
-      "balance": 366.5,
-      "equity": 387.32,
-      "margin": 0,
-      "free_margin": 387.32,
-      "margin_level": 0,
-      "profit": 20.82,
-      "last_updated": "2026-01-30T00:57:10Z",
+      "balance": 283.43,
+      "equity": 306.44,
+      "margin": 64.16,
+      "free_margin": 242.28,
+      "margin_level": 477.62,
+      "profit": 23.01,
+      "last_updated": "2026-01-30T01:32:11Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +569,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 125924.5,
-      "equity": 101561.5,
+      "equity": 103705.5,
       "margin": 1117.05,
-      "free_margin": 100444.45,
-      "margin_level": 9091.94,
-      "profit": -24363,
-      "last_updated": "2026-01-30T01:23:29Z",
+      "free_margin": 102588.45,
+      "margin_level": 9283.87,
+      "profit": -22219,
+      "last_updated": "2026-01-30T01:33:29Z",
       "active_eas": [
         "GoldenTrade"
       ]
