@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-06T12:21:04Z",
+  "last_updated": "2026-02-06T12:31:05Z",
   "accounts": [
     {
       "id": "0",
@@ -36,6 +36,23 @@
       ]
     },
     {
+      "id": "20188690",
+      "login": 20188690,
+      "name": "Eric Lanvin",
+      "server": "WindsorBrokers1-Demo",
+      "currency": "USC",
+      "balance": 10000,
+      "equity": 10000,
+      "margin": 0,
+      "free_margin": 10000,
+      "margin_level": 0,
+      "profit": 0,
+      "last_updated": "2026-02-06T12:23:31Z",
+      "active_eas": [
+        "GoldenTrade"
+      ]
+    },
+    {
       "id": "80062182",
       "login": 80062182,
       "name": "NUR ROSYID",
@@ -64,7 +81,7 @@
       "free_margin": 1.06,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-02-06T12:16:45Z",
+      "last_updated": "2026-02-06T12:26:45Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -569,12 +586,12 @@
       "server": "WindsorBrokers1-Real1",
       "currency": "USC",
       "balance": 193943.93,
-      "equity": 70350.43,
+      "equity": 70599.43,
       "margin": 947.67,
-      "free_margin": 69402.76,
-      "margin_level": 7423.52,
-      "profit": -123593.5,
-      "last_updated": "2026-02-06T12:21:04Z",
+      "free_margin": 69651.76,
+      "margin_level": 7449.79,
+      "profit": -123344.5,
+      "last_updated": "2026-02-06T12:31:05Z",
       "active_eas": [
         "GoldenTrade"
       ]
