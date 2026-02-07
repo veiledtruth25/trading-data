@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-07T09:05:01Z",
+  "last_updated": "2026-02-07T21:00:15Z",
   "accounts": [
     {
       "id": "0",
@@ -47,7 +47,7 @@
       "free_margin": 9688.58,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-02-07T09:05:00Z",
+      "last_updated": "2026-02-07T21:00:10Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -81,7 +81,7 @@
       "free_margin": 1.06,
       "margin_level": 0,
       "profit": 0,
-      "last_updated": "2026-02-07T09:05:01Z",
+      "last_updated": "2026-02-07T21:00:12Z",
       "active_eas": [
         "GoldenTrade"
       ]
@@ -587,11 +587,11 @@
       "currency": "USC",
       "balance": 193836.88,
       "equity": 62242.38,
-      "margin": 947.67,
-      "free_margin": 61294.71,
-      "margin_level": 6567.94,
+      "margin": 947.57,
+      "free_margin": 61294.81,
+      "margin_level": 6568.63,
       "profit": -131594.5,
-      "last_updated": "2026-02-07T09:05:00Z",
+      "last_updated": "2026-02-07T21:00:15Z",
       "active_eas": [
         "GoldenTrade"
       ]
