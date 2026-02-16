@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-16T08:17:40Z",
+  "last_updated": "2026-02-16T08:27:41Z",
   "accounts": [
     {
       "id": "0",
@@ -41,13 +41,13 @@
       "name": "Eric Lanvin",
       "server": "WindsorBrokers1-Demo",
       "currency": "USC",
-      "balance": 7690.21,
-      "equity": 7690.41,
-      "margin": 0,
-      "free_margin": 7690.41,
-      "margin_level": 0,
-      "profit": 0.2,
-      "last_updated": "2026-02-16T08:17:40Z",
+      "balance": 7689.45,
+      "equity": 7690.66,
+      "margin": 2.75,
+      "free_margin": 7687.91,
+      "margin_level": 279660.36,
+      "profit": 1.21,
+      "last_updated": "2026-02-16T08:27:41Z",
       "active_eas": [
         "GoldenTrade"
       ]
